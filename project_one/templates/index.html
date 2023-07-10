@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        .vdt{
+            font-size: 25px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            padding: 20px;
+        }
+        .vdt1{
+            font-size: 25px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            border-radius: 15px;
+            background-color: darkorange;
+
+        }
+        
+       #frm{
+        height: 200px;
+        width: 300px;
+        background-color: aliceblue;
+        
+        align-content: center;
+        justify-content: center;
+        margin-top: 300px;
+        border-radius: 20px;
+        padding: 20px;
+        
+        
+
+       }
+
+       body{
+        
+        background-image: url('https://png.pngtree.com/background/20210714/original/pngtree-purple-abstract-background-fluid-gradient-with-wave-forms-picture-image_1202137.jpg');
+        background-size: cover;
+       }
+    </style>
+    <title>Home</title>
+</head>
+<body>
+    <center>
+        <h1 style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+        font-size: 50px;
+        background-color:antiquewhite ;
+        border-radius:15px ;
+        display: inline;">&#128394 form positivity analysis </h1>
+    <div id="frm">
+        <form method='POST' enctype='multipart/form-data'>
+            {{form.hidden_tag()}}
+            {{form.file(class='vdt')}} <br>
+            {{form.submit(class='vdt1')}}
+
+            
+        </form>
+        <!--<video autoplay muted loop id="myVideo">
+            <source src="C:\Users\veena\Desktop\vit-hackathon-2022\project_one\templates\video.mp4" type="video/mp4">
+            Your browser does not support the HTML5 video tag.
+        </video>-->
+    </div>
+</center>
+
+</body>
+</html>
